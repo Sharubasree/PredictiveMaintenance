@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predictive Maintenance</title>
+    <link rel="stylesheet">
+    <style>
+    body{
+        background-image: linear-gradient(to left, #34e89e, #0f3443);
+    }
+
+    h1{
+        color: white;
+        font-size: 35px;
+        padding: 40px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+    }
+
+    .options{
+        margin: auto;
+        text-align: center;
+
+    }
+
+    button{
+        background-color: #93dbdc;
+        border: solid;
+      border-color: white;
+      height: 100px;
+      width: 250px;
+      border-radius: 10px;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      display: inline-block;
+      font-size: 20px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      margin: 4px 2px;
+      cursor: pointer;
+      transition: .2s ease-in-out 0s;
+    }
+
+    button:hover{
+        background-color: #AFE1AF;
+        color: black;
+        transform:scale(1.15);
+    }
+
+    .first{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .second{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .third{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+
+    </style> 
+</head>
+<body>
+    <h1>Predictive Maintenance of Milling Machine</h1>
+    <div class="options">
+    <div class="first">
+        <button onclick='window.location="http://127.0.0.1:5000/logreg"'>Logistic Regression</button>
+    </div>
+    <div class="second">
+        <button onclick='window.location="http://127.0.0.1:5000/dectr"'>Decision Tree</button>
+    </div>
+    <div class="third">
+        <button onclick='window.location="http://127.0.0.1:5000/rdmfrst"'>Random Forest</button>
+    </div>
+</div>
+</body>
+</html>

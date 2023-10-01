@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <title>Predictive Maintanence</title>
+    <link href='https://fonts.googleapis.com/css?family=Happy Monkey' rel='stylesheet'>
+<style>
+
+
+input[type=submit] {
+
+   border: none;
+   color: white;
+   padding: 10px 15px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   background-color: #0e4f87;
+   font-family: 'Happy Monkey';
+   font-size: 20px;
+   border-radius: 9px; 
+}
+.upload:hover{
+
+  background-color: #613220;
+}
+.custom-file-upload:hover {
+  background-color: #613220;
+}
+div {
+  border-radius: 5px;
+  background-color: #93dbdc;
+  padding: 20px;
+}
+
+
+body {
+    font-family: 'Happy Monkey';font-size: 22px;
+    background-color:  #93dbdc;
+}
+
+label{
+    background-color: grey;
+    position: absolute;
+}
+
+.container {
+   
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.item {
+    width: 60%;
+
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #0e4f87;
+  color: white;
+  border-radius: 4px;
+  font-size : 12.2px;
+}
+
+.file-upload {
+  position: relative;
+}
+
+
+</style>
+<body>
+
+
+<h3 style="text-align: center">Prediction using Random Forest</h3>
+<div style="justify-content: center; display: flex;">
+  <img src="https://media.istockphoto.com/id/1176307094/vector/vector-of-a-thoughtful-young-man-working-on-laptop-at-workplace-having-some-questions.jpg?s=612x612&w=0&k=20&c=wZW-kkyf1-DZ-FTlXageOmc8gjTWIW-1ZwHFlmskglE=" width="350px" height="auto">
+</div>
+<div class="container">
+    <div class="item">
+    <form action="http://127.0.0.1:5000/rfpredict" method="post" enctype="multipart/form-data">
+       <label for="fileToUpload" class="custom-file-upload">Choose file</label>
+       <input type="file" name="fileupload" id="fileToUpload"><br><br>
+        <input type="submit" value="Upload File" name="submit" class="upload">
+    </form>
+  
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
