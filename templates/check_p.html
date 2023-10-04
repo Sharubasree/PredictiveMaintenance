@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prediction Results</title>
+     <link href='https://fonts.googleapis.com/css?family=Happy Monkey' rel='stylesheet'>
+      
+    <style>
+      
+       body {
+         font-family: 'Happy Monkey';
+         background-color: #93dbdc;
+       }
+       .heading{
+        text-align:center;
+       }
+     table {
+        margin: auto;
+        border-collapse: collapse;
+        box-shadow: 0 0 20px #16696e;
+      }
+      th {
+        background-color: #229399;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px;
+      }
+      th:hover {
+        background-color: #21a6ad;
+      }
+      td {
+        padding: 10px;
+        border: 1px solid #16696e;
+      }
+      tr:hover td {
+        background-color: #82f4fa;
+      }
+    </style>
+  </head>
+  <body>
+   <div class="heading">
+    <h1>Prediction Results</h1>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          
+          <th>PRODUCT ID</th>
+          <th>OUTPUT</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in range(Machine|length) %}
+        <tr>
+          <td>{{ Machine[i] }}</td>
+          <td>{{ Output[i] }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    
+  </body>
+</html>
+
